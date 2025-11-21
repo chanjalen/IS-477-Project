@@ -1,0 +1,129 @@
+[
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Data.Population",
+    "newColumnName": "Population",
+    "description": "Rename column Data.Population to Population"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Data.Rates.Property.All",
+    "newColumnName": "Rates Property All",
+    "description": "Rename column Data.Rates.Property.All to Rates Property All"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Data.Rates.Property.Burglary",
+    "description": "Remove column Data.Rates.Property.Burglary"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Data.Rates.Property.Larceny",
+    "description": "Remove column Data.Rates.Property.Larceny"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Data.Rates.Property.Motor",
+    "description": "Remove column Data.Rates.Property.Motor"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Data.Totals.Property.Burglary",
+    "description": "Remove column Data.Totals.Property.Burglary"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Data.Totals.Property.Larceny",
+    "description": "Remove column Data.Totals.Property.Larceny"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Data.Totals.Property.Motor",
+    "description": "Remove column Data.Totals.Property.Motor"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Data.Rates.Violent.All",
+    "newColumnName": "Rates Violent.All",
+    "description": "Rename column Data.Rates.Violent.All to Rates Violent.All"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Rates Violent.All",
+    "newColumnName": "Rates Violent All",
+    "description": "Rename column Rates Violent.All to Rates Violent All"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Data.Rates.Violent.Assault",
+    "newColumnName": "Rates Violent Assault",
+    "description": "Rename column Data.Rates.Violent.Assault to Rates Violent Assault"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Data.Rates.Violent.Murder",
+    "newColumnName": "Rates Violent Murder",
+    "description": "Rename column Data.Rates.Violent.Murder to Rates Violent Murder"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Data.Rates.Violent.Rape",
+    "newColumnName": "Rates Violent Rape",
+    "description": "Rename column Data.Rates.Violent.Rape to Rates Violent Rape"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Data.Rates.Violent.Robbery",
+    "newColumnName": "Rates Violent Robbery",
+    "description": "Rename column Data.Rates.Violent.Robbery to Rates Violent Robbery"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Data.Totals.Property.All",
+    "newColumnName": "Data Totals Property All",
+    "description": "Rename column Data.Totals.Property.All to Data Totals Property All"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Data.Totals.Violent.All",
+    "newColumnName": "Totals Violent All",
+    "description": "Rename column Data.Totals.Violent.All to Totals Violent All"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Data.Totals.Violent.Assault",
+    "newColumnName": "Totals Violent Assault",
+    "description": "Rename column Data.Totals.Violent.Assault to Totals Violent Assault"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Data.Totals.Violent.Murder",
+    "newColumnName": "Totals Violent Murder",
+    "description": "Rename column Data.Totals.Violent.Murder to Totals Violent Murder"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Data.Totals.Violent.Rape",
+    "newColumnName": "Totals Violent Rape",
+    "description": "Rename column Data.Totals.Violent.Rape to Totals Violent Rape"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Data.Totals.Violent.Robbery",
+    "newColumnName": "Totals Violent Robbery",
+    "description": "Rename column Data.Totals.Violent.Robbery to Totals Violent Robbery"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Year",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Year using expression value.toNumber()"
+  }
+]
