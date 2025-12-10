@@ -34,3 +34,6 @@ To start off our data quality assessments, we first must go over the process of 
 8.	Run the data_analysis_notebook.ipynb to see our analysis and graphs.
 
 **References:**
+Linzey. (n.d.). Alcohol consumption in U.S. [Data set]. Kaggle. https://www.kaggle.com/datasets/linzey/alcohol-consumption-us
+Sontate, K. V., Kamaluddin, M. R., Mohamed, I. N., Mohamed, R. M. P., Shaikh, M. F., Kamal, H., & Kumar, J. (2021). Alcohol, aggression, and violence: From public health to neuroscience. Frontiers in Psychology, 12, Article 699726. https://doi.org/10.3389/fpsyg.2021.699726
+Whitcomb, R., Choi, J. M., & Guan, B. (2021). State Crime CSV File (Version 3.0.0) [Data set]. CORGIS Dataset Project. https://corgis-edu.github.io/corgis/csv/state_crime/
