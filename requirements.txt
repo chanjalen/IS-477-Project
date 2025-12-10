@@ -1,0 +1,7 @@
+requests
+kaggle
+pandas
+numpy
+matplotlib
+seaborn
+statsmodels

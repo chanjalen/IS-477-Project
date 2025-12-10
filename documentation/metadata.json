@@ -1,0 +1,44 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "name": "IS477 Final Project: The Relationship between Alcohol Consumption and Crime in the U.S.",
+  "description": "IS477 final project exploring the relationship between alcohol consumption and crime rates in the United States",
+  "creator": [
+    {
+      "@type": "Student",
+      "name": "Jalen Chan"
+    },
+    {
+      "@type": "Student",
+      "name": "Shoi Rathi"
+    }
+  ],
+  "spatialCoverage": {
+    "@type": "AdministrativeArea",
+    "name": "United States"
+  },
+  "temporalCoverage": "1977/2017",
+  "dateCreated": "2025-12-09",
+  "license": [
+    "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "https://www.gnu.org/licenses/old-licenses/gpl-2.0.html"
+  ],
+  "isBasedOn": [
+    "https://www.kaggle.com/datasets/linzey/alcohol-consumption-us",
+    "https://corgis-edu.github.io/corgis/csv/state_crime/"
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "text/csv",
+      "contentUrl": "https://www.kaggle.com/datasets/linzey/alcohol-consumption-us",
+      "description": "Alcohol consumption per capita by U.S. state and year (beer, wine, spirits, all beverages). Original dataset by linze.yu, licensed CC BY-NC-SA 4.0."
+    },
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "text/csv",
+      "contentUrl": "https://corgis-edu.github.io/corgis/csv/state_crime/",
+      "description": "U.S. state-level crime statistics including property and violent crime rates. Original dataset by Ryan Whitcomb, Joung Min Choi, and Bo Guan, licensed GPL-2.0."
+    }
+  ]
+}
