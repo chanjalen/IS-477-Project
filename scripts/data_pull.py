@@ -3,8 +3,9 @@ import requests
 from kaggle.api.kaggle_api_extended import KaggleApi
 from pathlib import Path
 
-# data directory
-data_dir = Path("data")
+# data directory\
+root = Path(__file__).resolve().parent.parent
+data_dir = root / Path("data")
 data_dir.mkdir(exist_ok=True)
 
 # checksum function
