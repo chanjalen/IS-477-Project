@@ -1,4 +1,4 @@
-**IS477 Final Project – The Relationship between Alcohol Consumption and Crime in the U.S**
+***IS477 Final Project – The Relationship between Alcohol Consumption and Crime in the U.S***
 
 **Contributors:**
 
