@@ -1,0 +1,36 @@
+**IS477 Final Project – The Relationship between Alcohol Consumption and Crime in the U.S**
+
+**Contributors:**
+
+Shoi Rathi and Jalen Chan contributed equally to this project. Splitting and checking each other’s work through push and pulls of our GitHub Repository.
+
+**Summary**
+
+**Data Profile:**
+
+We chose to use two datasets, one from Kaggle and the other from a GitHub page regarding state crime.
+
+The first dataset that we chose came from a Kaggle user named Linze.Yu in a dataset called alcohol consumption us. This dataset contains information about different alcohol consumption per capita for states in the United Staes from the years 1977-2017. Some information that we found useful for this project was the states column which shows alcohol consumption for individual states. Along with this, there were columns for separate forms of alcohol. This includes beer, wine, spirits, and an all-beverages column. These metrics were all calculated on a per capita basis so we could see on average, a person from X state drinks X beers, wine, spirits, etc. This dataset contains an Attribution-NonCommercial-ShareAlike 4.0 International license which means that this dataset is free to share and adapt the material in any format. This license says that using this material in a commercial matter is not allowed, but since this is a class project this would not fall under commercial use. The next piece of metadata that we were able to find on this dataset was the update frequency which was never. This dataset was updated 4 years ago and there is no plan to keep this updated. This doesn’t play a factor in our analysis however as we are looking at a lot of time analysis, so we have enough data to look at changes throughout the decades and time periods.
+
+The next dataset that we looked at was a state crime dataset that we found on GitHub. This contains information about states and different crimes that happened throughout the years. For this dataset we chose to look at the years 1977-2017 to keep the years standard to our alcohol consumption dataset. Some other interesting features that this dataset included are specific crime types like burglary, motor vehicle theft, etc. which showed the rates of occurrence per 100,000 population. It also showed current population in the state and the year that it is in. This dataset was made in 2021 but contains information from 1960-2019. It was created by Ryan Whitcomb, Joung Min Choi and Bo Guan. The original information came from the FBI: UCR page which gives information about the crime rates and information in the United States. This dataset comes from a dataset library called CORGIS which specializes in easy-to-use and applicable datasets. This data is provided publicly through CORGIS with no specific licensing involved. This means that it falls within the GPL-2.0 licensing. This is consistent with all datasets in the CORGIS repository and states that it is free to use, share, and modify the data. This licensing does not prohibit commercial use either so there really aren’t many restrictions when it comes to the usage of this data. The only restrictions that we found were to keep it under the GPL 2.0 licensing. In terms of our usage looking at this data relating it to the alcohol consumption dataset, we would not be violating any guidelines set in the GPL 2.0 licensing for the CORGIS data repository. Both datasets come from extremely reliable sources that are trusted by data users all around the world. Reading the licenses for both, we were not surprised by the usage rights and made sure to follow the guidelines correctly in our project use.
+
+**Data Quality:**
+
+To start off our data quality assessments, we first must go over the process of cleaning and what we did. What we first did was look at the metadata from the raw datasets that we pulled looking at the constraints within it and changes we might have to make. The major thing that we saw was that the years did not align correctly. This means that we wanted to change the years later to be consistent. The state column was what we would end up joining these different datasets on for analysis. The next step that we took was that we needed to acquire our Kaggle APIs for the script that we created in which we would be pulling the datasets from. The CORGIS dataset comes from GitHub so we could just use the URL for downloading on that one. With this step out of the way, we are now able to pull the data for usage. We then went and created a relational database through SQLite3 so that we could join our datasets together by state. We created a script that would create this relational database if it’s not there and add our datasets to it. From there we could join them together and export this data to a csv file called crime_alcohol_integrated.csv. With this integrated csv file created, we then went to Open Refine where we would clean this integrated csv further. One surprise that we ran into was that this data was relatively clean with both datasets being obtained from reputable sources like Kaggle and GitHub. What we first looked at were missing values in the data. We didn’t find any with consistency throughout. The next thing that we looked at were outliers. We were able to make a quick chart and found there were no major outliers that would indicate that bad or fraudulent data. We could then look at the data validation steps where we first looked at accuracy. Through this we found that there were no standouts in the data we were using. Next was consistency, some of the columns in this dataset did not have the correct type. What we found was that all the numeric columns were strings as their data type. For example, the column talking about beer (per capita) had a data type of string. We then converted these columns into float values so that we can analyze these columns later. We also changed the name of the columns to be simpler in future usage. The last change that we made was only keeping information from the range we want. This means only keeping the years 1977-2017. Because our crime rates dataset contained years beyond these dates we had to go ahead and remove those rows so that the consistency within the dataset is correct. Through Open Refine, we can do one more final check looking at different filtration methods that allow us to look for any final remaining inconsistencies or duplicates. With all of this done, we were able to export the new cleaned csv file along with the Json file showing the changes that we made.
+
+**Findings:**
+
+**Future Work:**
+
+**Reproducing:**
+
+1.	The first step that needs to be taken is to pull our repository from GitHub.
+2.	Next, we will need to install the requirements needed for this project. This can be done by running pip install -r requirements.txt.
+3.	Run python data_pull.py to pull the datasets to your computer.
+4.	Run python database_creation.py to create the SQLite3 database
+5.	Run python data_integration.py to create the integrated csv file.
+6.	With the crime_alcohol_integrated.csv file, import this into OpenRefine for cleaning. From here, take the data_cleaning_openrefine.json file to follow our steps of cleaning.
+7.	Upload the cleaned dataset from OpenRefine into the data folder.
+8.	Run the data_analysis_notebook.ipynb to see our analysis and graphs.
+
+**References:**
